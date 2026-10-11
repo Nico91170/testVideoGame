@@ -20,7 +20,7 @@ def main() -> int:
             errors.append(message)
 
     version = project / "ProjectSettings/ProjectVersion.txt"
-    check(version.exists() and "m_EditorVersion: 6000.0.40f1" in version.read_text(), "Version Unity 6000.0.40f1 non épinglée.")
+    check(version.exists() and "m_EditorVersion: 6000.0.84f1" in version.read_text(), "Version Unity 6000.0.84f1 non épinglée.")
     manifest = json.loads((project / "Packages/manifest.json").read_text())
     expected = {
         "com.unity.render-pipelines.universal": "17.0.3",

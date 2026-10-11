@@ -3,7 +3,7 @@ set -euo pipefail
 RIVE_REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 RIVE_MODE="${1:-editmode}"
 if [[ -z "${UNITY_EDITOR:-}" || ! -x "$UNITY_EDITOR" ]]; then
-    printf 'Définissez UNITY_EDITOR vers Unity 6000.0.40f1 avec une licence et le module Windows Build Support.\n' >&2
+    printf 'Définissez UNITY_EDITOR vers Unity 6000.0.84f1 avec une licence et le module Windows Build Support.\n' >&2
     exit 1
 fi
 mkdir -p "$RIVE_REPO_ROOT/Builds/TestResults"

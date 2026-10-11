@@ -1,6 +1,6 @@
 # Contrat d'intégration de RIVE 404
 
-État du code livré le 11 octobre 2026. Projet Unity 6 **6000.0.40f1**, C#, URP. Ce document décrit les interfaces implémentées ; les validations exécutées et restantes sont indiquées dans `Tests.md`.
+État du code livré le 11 octobre 2026. Projet Unity 6 **6000.0.84f1**, C#, URP. Ce document décrit les interfaces implémentées ; les validations exécutées et restantes sont indiquées dans `Tests.md`.
 
 ## Assemblages
 

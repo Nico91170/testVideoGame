@@ -14,13 +14,15 @@ Les objectifs d'une campagne de trois heures, d'environ 1 km² réellement explo
 
 ## Ouvrir et lancer
 
-1. Installer **Unity 6000.0.40f1** avec Unity Hub et le module **Windows Build Support (Mono)**. Activer votre licence dans Unity Hub.
+1. Installer **Unity 6000.0.84f1** avec Unity Hub et le module **Windows Build Support (Mono)**. Activer votre licence dans Unity Hub.
 2. Ajouter le dossier **`UnityProject/`** à Unity Hub. Ouvrir avec cette version et attendre le téléchargement des packages et l'import des FBX.
 3. Dans Unity, choisir **RIVE 404 → 1. Préparer le projet**. Ce menu génère les vrais assets URP, les trois profils graphiques et les catalogues éditables.
 4. Ouvrir **`Assets/_RIVE404/Scenes/Bootstrap.unity`**, lancer **Play**, puis **Nouvelle partie**.
 5. Parler à **Brune**, près du point de départ. Le journal et la carte indiquent le prochain objectif.
 
 Si l'import ou la compilation échoue, conserver le message de console et le journal : ces résultats sont indispensables pour terminer la validation de cette première implémentation.
+
+La version initialement indiquée, **6000.0.40f1**, est affectée par une faille connue du runtime Unity. Elle a été remplacée par **6000.0.84f1**, dernière version 6.0 LTS retournée par l'API officielle lors de la vérification du 11 octobre 2026. Voir [le détail de la mise à jour](Documentation/UnityVersion.md). Ne pas ignorer une alerte de sécurité de Unity Hub.
 
 ## Construire Windows
 

@@ -2,7 +2,9 @@
 
 ## Poste Windows
 
-Préparer Unity Hub, Unity 6000.0.40f1 avec Windows Build Support (Mono), Blender 4.3.2 ou version compatible, Git et VS Code avec l'extension Unity de Microsoft. Le package Unity Visual Studio Editor est épinglé dans le projet. Le second IDE demandé par le cahier des charges doit être installé avec les outils de développement de jeux Unity et vérifié sur le poste Windows.
+Préparer Unity Hub, Unity 6000.0.84f1 avec Windows Build Support (Mono), Blender 4.3.2 ou version compatible, Git et VS Code avec l'extension Unity de Microsoft. Le package Unity Visual Studio Editor est épinglé dans le projet. Le second IDE demandé par le cahier des charges doit être installé avec les outils de développement de jeux Unity et vérifié sur le poste Windows.
+
+Dans Unity Hub, rechercher **6000.0.84f1** dans l'archive des versions. L'ancien pin 6000.0.40f1 présente une alerte de sécurité : ne pas utiliser « Accepter et ignorer » pour poursuivre avec cette version. Installer le correctif demandé puis ouvrir le projet avec cet éditeur. La compatibilité réelle des scripts et packages doit encore être confirmée à l'import. Les sources et références de la mise à jour figurent dans [UnityVersion.md](UnityVersion.md).
 
 Ouvrir `UnityProject`, attendre la résolution des packages, exécuter **RIVE 404 > 1. Préparer le projet**, puis ouvrir Bootstrap. La préparation conserve les catalogues déjà édités. Elle configure URP et les shaders nécessaires aux modèles créés à l'exécution.
 
@@ -11,6 +13,8 @@ Les pins demandés sont URP 17.0.3, Input System 1.11.2, Cinemachine 3.1.3, AI N
 ## Blocage cloud observé
 
 Les requêtes HTTPS à `services.api.unity.com` et `packages.unity.com` ont renvoyé **403 CONNECT**. Les destinations `services.api.unity.com`, `packages.unity.com`, `download.unity3d.com` et `docs.unity3d.com` ont été ajoutées au brouillon de configuration, en conservant les presets existants. Cet enregistrement ne change pas le réseau courant et ne publie pas l'environnement.
+
+Lors de la correction de version, une requête à l'API officielle des releases `services.api.unity.com` a ensuite réussi. Elle a permis de vérifier 6000.0.84f1 ; ce résultat ne prouve ni la résolution du registry des packages ni la disponibilité d'un éditeur activé. La page de sécurité `unity.com` et les notes hébergées sur `storage.googleapis.com` sont restées inaccessibles depuis cette machine.
 
 Pour reprendre la préparation Unity dans le cloud, revoir et enregistrer les paramètres, puis publier l'environnement lorsque l'interface le demande. Vérifier ensuite le téléchargement officiel et l'activation par un mécanisme Unity approprié. Les domaines supplémentaires révélés par un téléchargement réel doivent être ajoutés au besoin. Ne mettre aucune licence ni valeur de secret dans les sources, les journaux ou le chat.
 

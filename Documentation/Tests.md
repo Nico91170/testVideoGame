@@ -2,6 +2,8 @@
 
 État du 11 octobre 2026. Les contrôles de domaine compilent du vrai C# et exécutent les règles ainsi que la sauvegarde sur disque. Ils ne remplacent pas l'import Unity, les tests du gameplay ou la mesure d'une build Windows.
 
+Le projet cible désormais **6000.0.84f1** à la suite de l'alerte Unity Hub sur l'ancien pin 6000.0.40f1. Le contrôle structurel a été relancé après cette modification ; l'import et la compilation Unity restent non exécutés. Le journal `Validation/UnityAvailability.txt` décrit la tentative historique effectuée avec l'ancien pin et n'a pas été réécrit.
+
 ## Vérifications automatisées
 
 | Contrôle | Commande | État |
@@ -22,7 +24,7 @@ Les 26 contrôles de domaine couvrent le catalogue 9+5, l'achèvement de la camp
 
 ## Préparation sur une machine Unity
 
-1. Installer **Unity 6000.0.40f1** via Unity Hub, avec **Windows Build Support (Mono)** et une licence Unity activée.
+1. Installer **Unity 6000.0.84f1** via Unity Hub, avec **Windows Build Support (Mono)** et une licence Unity activée.
 2. Ouvrir `UnityProject`. Autoriser le téléchargement officiel des packages épinglés. Attendre la fin de l'import sans erreurs de console.
 3. Exécuter **RIVE 404 > 1. Préparer le projet**. Le menu produit les vrais assets URP et renderer via les types du package, initialise les ressources et Global Settings URP, prépare les catalogues `ScriptableObject`, inclut les shaders nécessaires aux objets créés à l'exécution et inscrit Bootstrap dans les scènes de build.
 4. Confirmer **Project Settings > Player > Active Input Handling : Input System Package (New)**. La valeur est déjà enregistrée dans `ProjectSettings.asset`.
