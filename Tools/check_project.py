@@ -20,15 +20,15 @@ def main() -> int:
             errors.append(message)
 
     version = project / "ProjectSettings/ProjectVersion.txt"
-    check(version.exists() and "m_EditorVersion: 6000.0.84f1" in version.read_text(), "Version Unity 6000.0.84f1 non épinglée.")
+    check(version.exists() and "m_EditorVersion: 6000.6.5f1" in version.read_text(), "Version Unity 6000.6.5f1 non épinglée.")
     manifest = json.loads((project / "Packages/manifest.json").read_text())
     expected = {
-        "com.unity.render-pipelines.universal": "17.0.3",
-        "com.unity.inputsystem": "1.11.2",
-        "com.unity.cinemachine": "3.1.3",
-        "com.unity.ai.navigation": "2.0.6",
-        "com.unity.test-framework": "1.4.5",
-        "com.unity.ide.visualstudio": "2.0.22",
+        "com.unity.render-pipelines.universal": "17.6.0",
+        "com.unity.inputsystem": "1.20.1",
+        "com.unity.cinemachine": "6.6.0",
+        "com.unity.ai.navigation": "2.0.16",
+        "com.unity.test-framework": "1.8.0",
+        "com.unity.ide.visualstudio": "2.0.28",
     }
     for package, pin in expected.items():
         check(manifest["dependencies"].get(package) == pin, f"Package non épinglé : {package} {pin}.")
@@ -78,7 +78,7 @@ def main() -> int:
 
     lock = project / "Packages/packages-lock.json"
     if not lock.exists():
-        print("INFO packages-lock.json : à produire par le Package Manager Unity ; registry Unity inaccessible ici.")
+        print("INFO packages-lock.json : à produire par le Package Manager Unity ; résolution complète à effectuer dans Unity.")
     print(f"Intégrité structurelle : {metas} .meta, {len(assemblies)} assemblies, {len(errors)} erreurs.")
     for message in errors:
         print("FAIL " + message, file=sys.stderr)

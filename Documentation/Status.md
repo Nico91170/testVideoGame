@@ -2,6 +2,8 @@
 
 Les sources livrent une première implémentation intégrée. Le jeu complet ne peut pas être déclaré accepté tant que les validations Unity/Windows et le contenu final n'ont pas été terminés.
 
+La cible actuelle est **Unity 6.6 (6000.6.5f1)** avec **URP 17.6.0**. Les versions et adaptations documentées sont consignées dans [UnityVersion.md](UnityVersion.md). La migration des sources ne constitue pas une validation de l'import et du gameplay dans cet éditeur.
+
 | Exigence | Produit dans les sources | Preuve / travail restant |
 |---|---|---|
 | PRD-01 — Projet Unity ouvrable | Version, manifest, Bootstrap, scripts et métadonnées | Import et résolution des packages non exécutés ; lock à produire |

@@ -1,6 +1,6 @@
 # RIVE 404 — Le Dernier Commit
 
-Jeu solo 3D pour Windows x64, en Unity 6/C#. Nico découvre Santa Riva, une ville figée dans une simulation de la fin des années 1990. Avec le capitaine Sillage, il rassemble trois fragments et choisit l'avenir du monde.
+Jeu solo 3D pour Windows x64, en Unity **6.6 (6000.6.5f1)**/C#, avec **URP 17.6**. Nico découvre Santa Riva, une ville figée dans une simulation de la fin des années 1990. Avec le capitaine Sillage, il rassemble trois fragments et choisit l'avenir du monde.
 
 Pour télécharger les sources, ouvrir [Nico91170/testVideoGame](https://github.com/Nico91170/testVideoGame), sélectionner la branche `main`, puis **Code > Download ZIP**. Extraire l'archive et utiliser le dossier `UnityProject/` dans Unity Hub.
 
@@ -14,7 +14,7 @@ Les objectifs d'une campagne de trois heures, d'environ 1 km² réellement explo
 
 ## Ouvrir et lancer
 
-1. Installer **Unity 6000.0.84f1** avec Unity Hub et le module **Windows Build Support (Mono)**. Activer votre licence dans Unity Hub.
+1. Installer **Unity 6000.6.5f1** avec Unity Hub et le module **Windows Build Support (Mono)**. Activer votre licence dans Unity Hub.
 2. Ajouter le dossier **`UnityProject/`** à Unity Hub. Ouvrir avec cette version et attendre le téléchargement des packages et l'import des FBX.
 3. Dans Unity, choisir **RIVE 404 → 1. Préparer le projet**. Ce menu génère les vrais assets URP, les trois profils graphiques et les catalogues éditables.
 4. Ouvrir **`Assets/_RIVE404/Scenes/Bootstrap.unity`**, lancer **Play**, puis **Nouvelle partie**.
@@ -22,7 +22,9 @@ Les objectifs d'une campagne de trois heures, d'environ 1 km² réellement explo
 
 Si l'import ou la compilation échoue, conserver le message de console et le journal : ces résultats sont indispensables pour terminer la validation de cette première implémentation.
 
-La version initialement indiquée, **6000.0.40f1**, est affectée par une faille connue du runtime Unity. Elle a été remplacée par **6000.0.84f1**, dernière version 6.0 LTS retournée par l'API officielle lors de la vérification du 11 octobre 2026. Voir [le détail de la mise à jour](Documentation/UnityVersion.md). Ne pas ignorer une alerte de sécurité de Unity Hub.
+La cible **6000.6.5f1** a été confirmée dans l'API officielle Unity et les packages ont été alignés sur la documentation Unity 6.6. Cette version appartient au flux de mises à jour pris en charge (`SUPPORTED`). Voir [le détail de la migration](Documentation/UnityVersion.md).
+
+Si vous avez déjà importé l'ancienne livraison, conservez vos modifications, utilisez une nouvelle extraction des sources, puis ouvrez `UnityProject/` avec **6000.6.5f1**. Exécutez **RIVE 404 > 1. Préparer le projet** avant Play ou les tests. Les anciens assets URP générés ne doivent pas être copiés dans cette extraction ; vos modèles et données personnalisés peuvent être réintégrés après validation de la migration.
 
 ## Construire Windows
 

@@ -2,7 +2,7 @@
 
 État du 11 octobre 2026. Les contrôles de domaine compilent du vrai C# et exécutent les règles ainsi que la sauvegarde sur disque. Ils ne remplacent pas l'import Unity, les tests du gameplay ou la mesure d'une build Windows.
 
-Le projet cible désormais **6000.0.84f1** à la suite de l'alerte Unity Hub sur l'ancien pin 6000.0.40f1. Le contrôle structurel a été relancé après cette modification ; l'import et la compilation Unity restent non exécutés. Le journal `Validation/UnityAvailability.txt` décrit la tentative historique effectuée avec l'ancien pin et n'a pas été réécrit.
+Le projet cible désormais **Unity 6.6 (6000.6.5f1)** à la demande de l'utilisateur. L'éditeur exact et les packages ont été vérifiés dans les sources officielles ; la nouvelle surcharge `FindObjectsByType<T>()` remplace l'API obsolète. Les contrôles disponibles ont été relancés après cette migration : **26 tests réussis**, **29 scripts sans erreur de syntaxe**, **81 .meta et 5 assemblages sans erreur structurelle**. L'import et la compilation Unity restent non exécutés. Le journal `Validation/UnityAvailability.txt` décrit la tentative historique effectuée avec l'ancien pin et n'a pas été réécrit ; [Unity66.txt](Validation/Unity66.txt) contient les sorties de la migration actuelle.
 
 ## Vérifications automatisées
 
@@ -24,7 +24,7 @@ Les 26 contrôles de domaine couvrent le catalogue 9+5, l'achèvement de la camp
 
 ## Préparation sur une machine Unity
 
-1. Installer **Unity 6000.0.84f1** via Unity Hub, avec **Windows Build Support (Mono)** et une licence Unity activée.
+1. Installer **Unity 6000.6.5f1** via Unity Hub, avec **Windows Build Support (Mono)** et une licence Unity activée.
 2. Ouvrir `UnityProject`. Autoriser le téléchargement officiel des packages épinglés. Attendre la fin de l'import sans erreurs de console.
 3. Exécuter **RIVE 404 > 1. Préparer le projet**. Le menu produit les vrais assets URP et renderer via les types du package, initialise les ressources et Global Settings URP, prépare les catalogues `ScriptableObject`, inclut les shaders nécessaires aux objets créés à l'exécution et inscrit Bootstrap dans les scènes de build.
 4. Confirmer **Project Settings > Player > Active Input Handling : Input System Package (New)**. La valeur est déjà enregistrée dans `ProjectSettings.asset`.
@@ -34,7 +34,7 @@ Les 26 contrôles de domaine couvrent le catalogue 9+5, l'achèvement de la camp
 
 Pour le mode batch Linux, définir `UNITY_EDITOR` vers l'exécutable officiel Unity. Les commandes `Tools/unity_checks.sh prepare|editmode|playmode|windows` conservent les journaux et résultats sous `Builds/TestResults`. Les suites EditMode et PlayMode appellent d'abord la préparation afin de tester le projet URP configuré.
 
-L'accès à `packages.unity.com` renvoie actuellement **403 CONNECT** dans cette machine cloud. Aucune résolution complète des packages, compilation Unity ou activation de licence n'a été démontrée. `Packages/manifest.json` épingle les versions demandées ; **`packages-lock.json` doit être généré par le vrai Package Manager lors du premier import réussi puis conservé dans Git**. Un fichier de résolution n'est pas fabriqué sans métadonnées officielles. Les scripts batch échouent explicitement si l'éditeur manque.
+Les premières requêtes à `packages.unity.com` avaient renvoyé **403 CONNECT** ; les métadonnées du registry sont désormais accessibles pour plusieurs packages. Les téléchargements de tarballs depuis `download.packages.unity.com` ont été refusés. Aucune résolution complète des packages, compilation Unity ou activation de licence n'a été démontrée. `Packages/manifest.json` épingle les versions documentées pour 6000.6 ; **`packages-lock.json` doit être généré par le vrai Package Manager lors du premier import réussi puis conservé dans Git**. Les scripts batch échouent explicitement si l'éditeur manque.
 
 ## Recette Windows à terminer
 
@@ -59,4 +59,4 @@ La durée **180 minutes** et les **60 FPS en 1080p sur Ryzen 5 3600/RX 590/16 Go
 
 ## Source des contrôles API éditeur
 
-Une revue des sources publiques officielles a confirmé les signatures de `GraphicsSettings.GetGraphicsSettings()`, `PlayerSettings.SetScriptingBackend(...)` et du `ModelImporter` dans [UnityCsReference 6000.0](https://github.com/Unity-Technologies/UnityCsReference/tree/6000.0). Les factories du renderer, `UniversalRenderPipelineAsset.Create(...)`, `ResourceReloader` et `UniversalRenderPipelineGlobalSettings.Ensure(...)` ont été inspectées dans [Graphics 6000.0/staging](https://github.com/Unity-Technologies/Graphics/tree/6000.0/staging). Cette branche affiche actuellement URP 17.0.4 ; elle aide à vérifier les API de la famille 17.0, sans prouver l'import et la compilation du pin 17.0.3. Le préparateur vérifie explicitement les signatures internes avant invocation et échoue avec un message si le package ne correspond pas.
+Les signatures runtime ont été inspectées dans [UnityCsReference 6000.6](https://github.com/Unity-Technologies/UnityCsReference/tree/6000.6) : recherche d'objets, physique, CharacterController, NavMeshAgent, Playables, affichage et qualité. Les factories du renderer, `UniversalRenderPipelineAsset.Create(...)`, `ResourceReloader` et `UniversalRenderPipelineGlobalSettings.Ensure(...)` ont été vérifiées dans les sources officielles [Graphics](https://github.com/Unity-Technologies/Graphics), dont le package URP consulté indique **17.6.0**. Les références des packages sont consignées dans [UnityVersion.md](UnityVersion.md). Une revue de source ne constitue pas une compilation de l'éditeur exact ; le préparateur conserve des vérifications explicites de ses signatures internes.

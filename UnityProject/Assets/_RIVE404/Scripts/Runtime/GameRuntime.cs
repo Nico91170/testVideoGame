@@ -536,7 +536,7 @@ namespace Rive404.Runtime
             effectsLevel = Mathf.Clamp01(effects);
             if (audioDirector == null) return;
             audioDirector.SetLevels(musicLevel, effectsLevel);
-            foreach (var source in FindObjectsByType<AudioSource>(FindObjectsSortMode.None))
+            foreach (var source in FindObjectsByType<AudioSource>())
             {
                 if (audioDirector.Owns(source)) continue;
                 if (!baseSoundVolumes.TryGetValue(source, out float original))

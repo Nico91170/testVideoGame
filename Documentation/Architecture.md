@@ -1,5 +1,7 @@
 # Architecture de l'implémentation
 
+Cible actuelle : **Unity 6.6 (6000.6.5f1)**, **URP 17.6.0**. Le manifest et les outils de préparation correspondent à cette cible ; la compilation dans l'éditeur reste à effectuer.
+
 ## Responsabilités
 
 - `Rive404.Domain` : état sérialisable, campagne, progression, graphes de dialogues, énergie, migration et prérequis narratifs. Assembly sans références Unity, compilée et testée avec .NET 8.

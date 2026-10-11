@@ -2,19 +2,19 @@
 
 ## Poste Windows
 
-Préparer Unity Hub, Unity 6000.0.84f1 avec Windows Build Support (Mono), Blender 4.3.2 ou version compatible, Git et VS Code avec l'extension Unity de Microsoft. Le package Unity Visual Studio Editor est épinglé dans le projet. Le second IDE demandé par le cahier des charges doit être installé avec les outils de développement de jeux Unity et vérifié sur le poste Windows.
+Préparer Unity Hub, Unity 6000.6.5f1 avec Windows Build Support (Mono), Blender 4.3.2 ou version compatible, Git et VS Code avec l'extension Unity de Microsoft. Le package Unity Visual Studio Editor est épinglé dans le projet. Le second IDE demandé par le cahier des charges doit être installé avec les outils de développement de jeux Unity et vérifié sur le poste Windows.
 
-Dans Unity Hub, rechercher **6000.0.84f1** dans l'archive des versions. L'ancien pin 6000.0.40f1 présente une alerte de sécurité : ne pas utiliser « Accepter et ignorer » pour poursuivre avec cette version. Installer le correctif demandé puis ouvrir le projet avec cet éditeur. La compatibilité réelle des scripts et packages doit encore être confirmée à l'import. Les sources et références de la mise à jour figurent dans [UnityVersion.md](UnityVersion.md).
+Dans Unity Hub, rechercher **6000.6.5f1** dans l'archive des versions. L'ancien pin 6000.0.40f1 présente une alerte de sécurité : ne pas utiliser « Accepter et ignorer » pour poursuivre avec cette version. Installer le correctif demandé puis ouvrir le projet avec cet éditeur. La compatibilité réelle des scripts et packages doit encore être confirmée à l'import. Les sources et références de la mise à jour figurent dans [UnityVersion.md](UnityVersion.md).
 
 Ouvrir `UnityProject`, attendre la résolution des packages, exécuter **RIVE 404 > 1. Préparer le projet**, puis ouvrir Bootstrap. La préparation conserve les catalogues déjà édités. Elle configure URP et les shaders nécessaires aux modèles créés à l'exécution.
 
-Les pins demandés sont URP 17.0.3, Input System 1.11.2, Cinemachine 3.1.3, AI Navigation 2.0.6, Test Framework 1.4.5 et Visual Studio Editor 2.0.22. La résolution et la compatibilité de cette combinaison restent à confirmer par le premier import Unity réussi. Cinemachine est disponible comme dépendance ; la caméra actuelle utilise un contrôleur C# avec collision.
+Les packages sont alignés sur la documentation Unity 6.6 : **URP 17.6.0**, **Input System 1.20.1**, **Cinemachine 6.6.0**, **AI Navigation 2.0.16**, **Test Framework 1.8.0** et **Visual Studio Editor 2.0.28**. URP, Cinemachine et Test Framework sont des packages liés à la version de l'éditeur dans cette branche. La résolution complète et la compilation restent à confirmer par le premier import Unity réussi. Cinemachine est disponible comme dépendance ; la caméra actuelle utilise un contrôleur C# avec collision.
 
 ## Blocage cloud observé
 
 Les requêtes HTTPS à `services.api.unity.com` et `packages.unity.com` ont renvoyé **403 CONNECT**. Les destinations `services.api.unity.com`, `packages.unity.com`, `download.unity3d.com` et `docs.unity3d.com` ont été ajoutées au brouillon de configuration, en conservant les presets existants. Cet enregistrement ne change pas le réseau courant et ne publie pas l'environnement.
 
-Lors de la correction de version, une requête à l'API officielle des releases `services.api.unity.com` a ensuite réussi. Elle a permis de vérifier 6000.0.84f1 ; ce résultat ne prouve ni la résolution du registry des packages ni la disponibilité d'un éditeur activé. La page de sécurité `unity.com` et les notes hébergées sur `storage.googleapis.com` sont restées inaccessibles depuis cette machine.
+Les requêtes suivantes à l'API officielle des releases et à la documentation Unity 6.6 ont réussi. Elles confirment **6000.6.5f1**, révision **3ff58d469c8a**, ainsi que les versions de packages documentées. Certaines métadonnées du registry sont aussi accessibles ; les téléchargements de tarballs depuis `download.packages.unity.com` restent refusés dans ce cloud. Aucun éditeur Unity activé ni résolution complète des dépendances n'a été démontré. Voir [UnityVersion.md](UnityVersion.md).
 
 Pour reprendre la préparation Unity dans le cloud, revoir et enregistrer les paramètres, puis publier l'environnement lorsque l'interface le demande. Vérifier ensuite le téléchargement officiel et l'activation par un mécanisme Unity approprié. Les domaines supplémentaires révélés par un téléchargement réel doivent être ajoutés au besoin. Ne mettre aucune licence ni valeur de secret dans les sources, les journaux ou le chat.
 

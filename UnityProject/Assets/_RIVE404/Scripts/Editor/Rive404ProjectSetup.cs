@@ -49,7 +49,7 @@ namespace Rive404.Editor
                 var factory = typeof(UniversalRenderPipelineAsset).GetMethod("CreateRendererAsset",
                     BindingFlags.Static | BindingFlags.NonPublic, null,
                     new[] { typeof(string), typeof(RendererType), typeof(bool), typeof(string) }, null);
-                if (factory == null) throw new InvalidOperationException("Fabrique URP 17 du renderer introuvable.");
+                if (factory == null) throw new InvalidOperationException("Fabrique URP 17.6 du renderer introuvable.");
                 renderer = factory.Invoke(null, new object[] { rendererPath, RendererType.UniversalRenderer, false, "Renderer" }) as UniversalRendererData;
                 if (renderer == null) throw new InvalidOperationException("Création du renderer URP impossible.");
             }
@@ -60,12 +60,12 @@ namespace Rive404.Editor
                 pipeline = UniversalRenderPipelineAsset.Create(renderer);
                 AssetDatabase.CreateAsset(pipeline, pipelinePath);
             }
-            // URP 17 serializes the renderer list; using SerializedObject preserves
+            // URP 17.6 serializes the renderer list; using SerializedObject preserves
             // the package's own asset type and avoids hand-written URP YAML.
             var serialized = new SerializedObject(pipeline);
             var rendererList = serialized.FindProperty("m_RendererDataList");
             if (rendererList == null || !rendererList.isArray)
-                throw new InvalidOperationException("URP incompatible : liste des renderers introuvable. Version attendue 17.0.3.");
+                throw new InvalidOperationException("URP incompatible : liste des renderers introuvable. Version attendue 17.6.0.");
             rendererList.arraySize = 1;
             rendererList.GetArrayElementAtIndex(0).objectReferenceValue = renderer;
             var defaultRenderer = serialized.FindProperty("m_DefaultRendererIndex");
