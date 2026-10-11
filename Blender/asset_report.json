@@ -1,0 +1,190 @@
+[
+  {
+    "model": "Nico",
+    "meshes": 46,
+    "vertices": 718,
+    "polygons": 706,
+    "bones": 14,
+    "actions": [
+      "Nico_Idle",
+      "Nico_Walk"
+    ],
+    "export_meshes": 1,
+    "fbx_bytes": 303964,
+    "blend_bytes": 1154672
+  },
+  {
+    "model": "Sillage",
+    "meshes": 42,
+    "vertices": 713,
+    "polygons": 695,
+    "bones": 14,
+    "actions": [
+      "Sillage_Idle",
+      "Sillage_Walk"
+    ],
+    "export_meshes": 1,
+    "fbx_bytes": 304828,
+    "blend_bytes": 1224488
+  },
+  {
+    "model": "NPC",
+    "meshes": 34,
+    "vertices": 614,
+    "polygons": 608,
+    "bones": 14,
+    "actions": [
+      "NPC_Idle",
+      "NPC_Walk"
+    ],
+    "export_meshes": 1,
+    "fbx_bytes": 297052,
+    "blend_bytes": 1237760
+  },
+  {
+    "model": "Drone",
+    "meshes": 21,
+    "vertices": 348,
+    "polygons": 330,
+    "bones": 0,
+    "actions": [],
+    "export_meshes": 1,
+    "fbx_bytes": 29852,
+    "blend_bytes": 1015488
+  },
+  {
+    "model": "Sentinel",
+    "meshes": 23,
+    "vertices": 274,
+    "polygons": 288,
+    "bones": 0,
+    "actions": [],
+    "export_meshes": 1,
+    "fbx_bytes": 26412,
+    "blend_bytes": 1018480
+  },
+  {
+    "model": "Corrupted",
+    "meshes": 36,
+    "vertices": 634,
+    "polygons": 634,
+    "bones": 14,
+    "actions": [
+      "Corrupted_Idle",
+      "Corrupted_Walk"
+    ],
+    "export_meshes": 1,
+    "fbx_bytes": 296908,
+    "blend_bytes": 1274840
+  },
+  {
+    "model": "Boss",
+    "meshes": 28,
+    "vertices": 318,
+    "polygons": 320,
+    "bones": 0,
+    "actions": [],
+    "export_meshes": 1,
+    "fbx_bytes": 30684,
+    "blend_bytes": 1067372
+  },
+  {
+    "model": "House",
+    "meshes": 27,
+    "vertices": 222,
+    "polygons": 165,
+    "bones": 0,
+    "actions": [],
+    "export_meshes": 1,
+    "fbx_bytes": 28220,
+    "blend_bytes": 1097048
+  },
+  {
+    "model": "Warehouse",
+    "meshes": 32,
+    "vertices": 254,
+    "polygons": 191,
+    "bones": 0,
+    "actions": [],
+    "export_meshes": 1,
+    "fbx_bytes": 27132,
+    "blend_bytes": 1122412
+  },
+  {
+    "model": "Tower",
+    "meshes": 111,
+    "vertices": 900,
+    "polygons": 684,
+    "bones": 0,
+    "actions": [],
+    "export_meshes": 1,
+    "fbx_bytes": 36796,
+    "blend_bytes": 1534820
+  },
+  {
+    "model": "Tree",
+    "meshes": 8,
+    "vertices": 112,
+    "polygons": 120,
+    "bones": 0,
+    "actions": [],
+    "export_meshes": 1,
+    "fbx_bytes": 22732,
+    "blend_bytes": 1050444
+  },
+  {
+    "model": "Lamp",
+    "meshes": 5,
+    "vertices": 68,
+    "polygons": 44,
+    "bones": 0,
+    "actions": [],
+    "export_meshes": 1,
+    "fbx_bytes": 20588,
+    "blend_bytes": 1031056
+  },
+  {
+    "model": "Terminal",
+    "meshes": 15,
+    "vertices": 128,
+    "polygons": 94,
+    "bones": 0,
+    "actions": [],
+    "export_meshes": 1,
+    "fbx_bytes": 23404,
+    "blend_bytes": 1081472
+  },
+  {
+    "model": "Crate",
+    "meshes": 8,
+    "vertices": 64,
+    "polygons": 48,
+    "bones": 0,
+    "actions": [],
+    "export_meshes": 1,
+    "fbx_bytes": 18668,
+    "blend_bytes": 1044476
+  },
+  {
+    "model": "Boat",
+    "meshes": 15,
+    "vertices": 146,
+    "polygons": 96,
+    "bones": 0,
+    "actions": [],
+    "export_meshes": 1,
+    "fbx_bytes": 23868,
+    "blend_bytes": 1081768
+  },
+  {
+    "model": "Fort",
+    "meshes": 68,
+    "vertices": 608,
+    "polygons": 440,
+    "bones": 0,
+    "actions": [],
+    "export_meshes": 1,
+    "fbx_bytes": 29308,
+    "blend_bytes": 1361196
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "name": "Rive404.Editor",
+  "rootNamespace": "Rive404.Editor",
+  "references": [
+    "Rive404.Domain",
+    "Rive404.Game",
+    "Unity.RenderPipelines.Core.Runtime",
+    "Unity.RenderPipelines.Universal.Runtime"
+  ],
+  "includePlatforms": ["Editor"],
+  "autoReferenced": true
+}

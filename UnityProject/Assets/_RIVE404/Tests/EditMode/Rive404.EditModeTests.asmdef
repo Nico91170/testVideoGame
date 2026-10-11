@@ -1,0 +1,8 @@
+{
+  "name": "Rive404.EditModeTests",
+  "rootNamespace": "Rive404.Tests",
+  "references": ["Rive404.Domain", "Rive404.Game"],
+  "includePlatforms": ["Editor"],
+  "optionalUnityReferences": ["TestAssemblies"],
+  "autoReferenced": false
+}

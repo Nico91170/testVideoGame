@@ -1,0 +1,100 @@
+[
+  {
+    "name": "Footstep",
+    "duration": 0.16,
+    "sample_rate": 22050,
+    "peak": 0.26,
+    "bytes": 7100
+  },
+  {
+    "name": "Swing",
+    "duration": 0.24,
+    "sample_rate": 22050,
+    "peak": 0.1786,
+    "bytes": 10628
+  },
+  {
+    "name": "Impact",
+    "duration": 0.22,
+    "sample_rate": 22050,
+    "peak": 0.5388,
+    "bytes": 9746
+  },
+  {
+    "name": "Scan",
+    "duration": 0.7,
+    "sample_rate": 22050,
+    "peak": 0.1905,
+    "bytes": 30914
+  },
+  {
+    "name": "Patch",
+    "duration": 0.8,
+    "sample_rate": 22050,
+    "peak": 0.215,
+    "bytes": 35324
+  },
+  {
+    "name": "Override",
+    "duration": 0.7,
+    "sample_rate": 22050,
+    "peak": 0.1961,
+    "bytes": 30914
+  },
+  {
+    "name": "UI",
+    "duration": 0.09,
+    "sample_rate": 22050,
+    "peak": 0.1469,
+    "bytes": 4012
+  },
+  {
+    "name": "Quest",
+    "duration": 1.4,
+    "sample_rate": 22050,
+    "peak": 0.2458,
+    "bytes": 61784
+  },
+  {
+    "name": "Death",
+    "duration": 1.5,
+    "sample_rate": 22050,
+    "peak": 0.2127,
+    "bytes": 66194
+  },
+  {
+    "name": "Energy",
+    "duration": 0.5,
+    "sample_rate": 22050,
+    "peak": 0.1572,
+    "bytes": 22094
+  },
+  {
+    "name": "Theme",
+    "duration": 64,
+    "sample_rate": 22050,
+    "peak": 0.2264,
+    "bytes": 2822444
+  },
+  {
+    "name": "PortAmbience",
+    "duration": 20,
+    "sample_rate": 22050,
+    "peak": 0.0479,
+    "bytes": 882044
+  },
+  {
+    "name": "NeonAmbience",
+    "duration": 20,
+    "sample_rate": 22050,
+    "peak": 0.0254,
+    "bytes": 882044
+  },
+  {
+    "name": "CliffsAmbience",
+    "duration": 20,
+    "sample_rate": 22050,
+    "peak": 0.0507,
+    "bytes": 882044
+  }
+]

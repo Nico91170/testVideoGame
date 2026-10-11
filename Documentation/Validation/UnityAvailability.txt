@@ -1,0 +1,9 @@
+Tentative du 11 octobre 2026 : Tools/unity_checks.sh prepare
+Code de sortie : 1
+
+Définissez UNITY_EDITOR vers Unity 6000.0.40f1 avec une licence et le module Windows Build Support.
+
+La vérification de disponibilité du script a refusé le lancement. L'éditeur
+Unity n'a pas été exécuté, et les tests EditMode/PlayMode ainsi que la build
+Windows n'ont donc pas été validés. Ce résultat ne désigne pas un échec de
+compilation des sources.

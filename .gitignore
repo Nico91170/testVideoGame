@@ -1,0 +1,29 @@
+# Unity generated state
+UnityProject/[Ll]ibrary/
+UnityProject/[Tt]emp/
+UnityProject/[Oo]bj/
+UnityProject/[Ll]ogs/
+UnityProject/[Uu]ser[Ss]ettings/
+UnityProject/MemoryCaptures/
+UnityProject/Recordings/
+UnityProject/*.csproj
+UnityProject/*.sln
+UnityProject/*.slnx
+UnityProject/.vs/
+UnityProject/.idea/
+# Rebuildable checks and builds
+Builds/
+Tools/**/bin/
+Tools/**/obj/
+**/__pycache__/
+*.pyc
+*.blend1
+*.blend2
+Blender/*.log
+.DS_Store
+Thumbs.db
+# Credentials and personal settings
+*.ulf
+.env
+.env.*
+!.env.example

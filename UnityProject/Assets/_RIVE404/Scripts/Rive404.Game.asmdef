@@ -1,0 +1,6 @@
+{
+  "name": "Rive404.Game",
+  "rootNamespace": "Rive404",
+  "references": ["Rive404.Domain", "Unity.InputSystem"],
+  "autoReferenced": true
+}

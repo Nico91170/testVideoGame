@@ -1,0 +1,3 @@
+Vérification du 11 octobre 2026 — code de sortie 0
+
+Analyse syntaxique C# 9 : 29 fichiers, 0 erreurs. Ce contrôle ne compile pas contre les API Unity.

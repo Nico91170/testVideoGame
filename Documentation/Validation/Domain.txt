@@ -1,0 +1,29 @@
+Vérification du 11 octobre 2026 — code de sortie 0
+
+PASS catalogue : 9 principales, 5 secondaires, objectifs valides
+PASS campagne complète : progression réelle et 3 améliorations
+PASS événements sans rapport : aucun avancement
+PASS combat précoce : aucune mission irrémédiablement bloquée
+PASS dialogue : une action ne consomme pas deux réponses
+PASS secondaire : collecte préalable puis deux conversations
+PASS récompenses : événements répétés idempotents
+PASS reprise : objectifs et principale active conservés
+PASS normalisation : valeurs invalides et doublons assainis
+PASS checkpoint : migration v0 copie la position sans alias
+PASS checkpoint : position sous le sol corrigée avant reprise
+PASS sauvegarde : version future refusée
+PASS énergie : coût réel, refus sans mutation et recharge plafonnée
+PASS fins : trois fragments, noyau et boss obligatoires
+PASS récit : sacrifice du capitaine obligatoire avant ancre et noyau
+PASS récit : drapeaux de fin ne permettent pas de sauter la campagne
+PASS récit : fragments uniquement à l'objectif attendu
+PASS définitions : identifiants et ordres en double détectés
+PASS dialogues : 12 PNJ, variantes et retours avec sorties accessibles
+PASS disque : sauvegarde/reprise position, checkpoint et quêtes
+PASS disque : JSON UTF-8 et choix final conservés
+PASS disque : sauvegarde initialement absente signalée
+PASS disque : fichier principal corrompu, secours restauré
+PASS disque : corruption sans secours refusée explicitement
+PASS disque : altération du contenu détectée par checksum
+PASS disque : version future ne remplace pas un état valide
+Résultat : 26 réussis, 0 échoués.

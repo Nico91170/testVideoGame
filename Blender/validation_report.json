@@ -1,0 +1,350 @@
+{
+  "tool": "Blender 4.3.2",
+  "scope": "FBX reimport in Blender and PCM WAV; Unity import untested",
+  "models": [
+    {
+      "model": "Nico",
+      "import_meshes": 1,
+      "vertices": 718,
+      "bones": 14,
+      "bounds_min": [
+        -0.424,
+        -0.245,
+        0.016
+      ],
+      "dimensions_m": [
+        0.848,
+        0.409,
+        1.872
+      ],
+      "result": "PASS"
+    },
+    {
+      "model": "Sillage",
+      "import_meshes": 1,
+      "vertices": 713,
+      "bones": 14,
+      "bounds_min": [
+        -0.424,
+        -0.245,
+        0.016
+      ],
+      "dimensions_m": [
+        0.884,
+        0.645,
+        1.872
+      ],
+      "result": "PASS"
+    },
+    {
+      "model": "NPC",
+      "import_meshes": 1,
+      "vertices": 614,
+      "bones": 14,
+      "bounds_min": [
+        -0.424,
+        -0.245,
+        0.016
+      ],
+      "dimensions_m": [
+        0.848,
+        0.409,
+        1.872
+      ],
+      "result": "PASS"
+    },
+    {
+      "model": "Drone",
+      "import_meshes": 1,
+      "vertices": 348,
+      "bones": 0,
+      "bounds_min": [
+        -0.58,
+        -0.52,
+        0.1
+      ],
+      "dimensions_m": [
+        1.16,
+        1.04,
+        0.56
+      ],
+      "result": "PASS"
+    },
+    {
+      "model": "Sentinel",
+      "import_meshes": 1,
+      "vertices": 274,
+      "bones": 0,
+      "bounds_min": [
+        -0.515,
+        -0.276,
+        0.01
+      ],
+      "dimensions_m": [
+        1.03,
+        0.426,
+        1.68
+      ],
+      "result": "PASS"
+    },
+    {
+      "model": "Corrupted",
+      "import_meshes": 1,
+      "vertices": 634,
+      "bones": 14,
+      "bounds_min": [
+        -0.424,
+        -0.245,
+        0.016
+      ],
+      "dimensions_m": [
+        0.848,
+        0.409,
+        1.872
+      ],
+      "result": "PASS"
+    },
+    {
+      "model": "Boss",
+      "import_meshes": 1,
+      "vertices": 318,
+      "bones": 0,
+      "bounds_min": [
+        -0.8498,
+        -0.4554,
+        0.0165
+      ],
+      "dimensions_m": [
+        1.6995,
+        0.9752,
+        3.2175
+      ],
+      "result": "PASS"
+    },
+    {
+      "model": "House",
+      "import_meshes": 1,
+      "vertices": 222,
+      "bones": 0,
+      "bounds_min": [
+        -3.3,
+        -4.0131,
+        -0.005
+      ],
+      "dimensions_m": [
+        6.6,
+        7.3131,
+        5.205
+      ],
+      "result": "PASS"
+    },
+    {
+      "model": "Warehouse",
+      "import_meshes": 1,
+      "vertices": 254,
+      "bones": 0,
+      "bounds_min": [
+        -5.2,
+        -5.25,
+        -0.0
+      ],
+      "dimensions_m": [
+        10.4,
+        10.5,
+        6.6
+      ],
+      "result": "PASS"
+    },
+    {
+      "model": "Tower",
+      "import_meshes": 1,
+      "vertices": 900,
+      "bones": 0,
+      "bounds_min": [
+        -4.5,
+        -4.95,
+        -0.0
+      ],
+      "dimensions_m": [
+        9.0,
+        8.95,
+        20.22
+      ],
+      "result": "PASS"
+    },
+    {
+      "model": "Tree",
+      "import_meshes": 1,
+      "vertices": 112,
+      "bones": 0,
+      "bounds_min": [
+        -1.7441,
+        -1.6581,
+        -0.0263
+      ],
+      "dimensions_m": [
+        3.5039,
+        3.0343,
+        5.0023
+      ],
+      "result": "PASS"
+    },
+    {
+      "model": "Lamp",
+      "import_meshes": 1,
+      "vertices": 68,
+      "bones": 0,
+      "bounds_min": [
+        -0.2663,
+        -0.99,
+        -0.0
+      ],
+      "dimensions_m": [
+        0.5326,
+        1.27,
+        4.8
+      ],
+      "result": "PASS"
+    },
+    {
+      "model": "Terminal",
+      "import_meshes": 1,
+      "vertices": 128,
+      "bones": 0,
+      "bounds_min": [
+        -0.375,
+        -0.4375,
+        -0.0
+      ],
+      "dimensions_m": [
+        0.75,
+        0.7625,
+        1.6136
+      ],
+      "result": "PASS"
+    },
+    {
+      "model": "Crate",
+      "import_meshes": 1,
+      "vertices": 64,
+      "bones": 0,
+      "bounds_min": [
+        -0.515,
+        -0.563,
+        -0.025
+      ],
+      "dimensions_m": [
+        1.03,
+        1.107,
+        1.05
+      ],
+      "result": "PASS"
+    },
+    {
+      "model": "Boat",
+      "import_meshes": 1,
+      "vertices": 146,
+      "bones": 0,
+      "bounds_min": [
+        -1.3,
+        -2.6,
+        -0.0
+      ],
+      "dimensions_m": [
+        2.6,
+        5.7,
+        4.0
+      ],
+      "result": "PASS"
+    },
+    {
+      "model": "Fort",
+      "import_meshes": 1,
+      "vertices": 608,
+      "bones": 0,
+      "bounds_min": [
+        -9.4,
+        -9.4,
+        -0.0
+      ],
+      "dimensions_m": [
+        18.8,
+        18.8,
+        8.975
+      ],
+      "result": "PASS"
+    }
+  ],
+  "audio": [
+    {
+      "name": "CliffsAmbience",
+      "seconds": 20.0,
+      "result": "PASS"
+    },
+    {
+      "name": "Death",
+      "seconds": 1.5,
+      "result": "PASS"
+    },
+    {
+      "name": "Energy",
+      "seconds": 0.5,
+      "result": "PASS"
+    },
+    {
+      "name": "Footstep",
+      "seconds": 0.16,
+      "result": "PASS"
+    },
+    {
+      "name": "Impact",
+      "seconds": 0.22,
+      "result": "PASS"
+    },
+    {
+      "name": "NeonAmbience",
+      "seconds": 20.0,
+      "result": "PASS"
+    },
+    {
+      "name": "Override",
+      "seconds": 0.7,
+      "result": "PASS"
+    },
+    {
+      "name": "Patch",
+      "seconds": 0.8,
+      "result": "PASS"
+    },
+    {
+      "name": "PortAmbience",
+      "seconds": 20.0,
+      "result": "PASS"
+    },
+    {
+      "name": "Quest",
+      "seconds": 1.4,
+      "result": "PASS"
+    },
+    {
+      "name": "Scan",
+      "seconds": 0.7,
+      "result": "PASS"
+    },
+    {
+      "name": "Swing",
+      "seconds": 0.24,
+      "result": "PASS"
+    },
+    {
+      "name": "Theme",
+      "seconds": 64.0,
+      "result": "PASS"
+    },
+    {
+      "name": "UI",
+      "seconds": 0.09,
+      "result": "PASS"
+    }
+  ]
+}

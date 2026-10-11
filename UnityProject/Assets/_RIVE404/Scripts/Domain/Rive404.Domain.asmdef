@@ -1,0 +1,7 @@
+{
+  "name": "Rive404.Domain",
+  "rootNamespace": "Rive404.Domain",
+  "references": [],
+  "autoReferenced": true,
+  "noEngineReferences": true
+}

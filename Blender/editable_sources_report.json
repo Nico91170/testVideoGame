@@ -1,0 +1,92 @@
+{
+  "tool": "Blender 4.3.2",
+  "sources": [
+    {
+      "model": "Nico",
+      "editable_meshes": 46,
+      "result": "PASS"
+    },
+    {
+      "model": "Sillage",
+      "editable_meshes": 42,
+      "result": "PASS"
+    },
+    {
+      "model": "NPC",
+      "editable_meshes": 34,
+      "result": "PASS"
+    },
+    {
+      "model": "Drone",
+      "editable_meshes": 21,
+      "result": "PASS"
+    },
+    {
+      "model": "Sentinel",
+      "editable_meshes": 23,
+      "result": "PASS"
+    },
+    {
+      "model": "Corrupted",
+      "editable_meshes": 36,
+      "result": "PASS"
+    },
+    {
+      "model": "Boss",
+      "editable_meshes": 28,
+      "result": "PASS"
+    },
+    {
+      "model": "House",
+      "editable_meshes": 27,
+      "result": "PASS"
+    },
+    {
+      "model": "Warehouse",
+      "editable_meshes": 32,
+      "result": "PASS"
+    },
+    {
+      "model": "Tower",
+      "editable_meshes": 111,
+      "result": "PASS"
+    },
+    {
+      "model": "Tree",
+      "editable_meshes": 8,
+      "result": "PASS"
+    },
+    {
+      "model": "Lamp",
+      "editable_meshes": 5,
+      "result": "PASS"
+    },
+    {
+      "model": "Terminal",
+      "editable_meshes": 15,
+      "result": "PASS"
+    },
+    {
+      "model": "Crate",
+      "editable_meshes": 8,
+      "result": "PASS"
+    },
+    {
+      "model": "Boat",
+      "editable_meshes": 15,
+      "result": "PASS"
+    },
+    {
+      "model": "Fort",
+      "editable_meshes": 68,
+      "result": "PASS"
+    }
+  ],
+  "disposable_edit_export_reimport": {
+    "model": "Nico",
+    "edit_m": 0.093,
+    "position_error_m": 1.4919776018337002e-07,
+    "result": "PASS"
+  },
+  "scope": "Source editing and FBX round-trip in Blender; Unity reimport untested"
+}

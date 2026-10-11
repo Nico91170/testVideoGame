@@ -1,0 +1,4 @@
+Vérification du 11 octobre 2026 — code de sortie 0
+
+INFO packages-lock.json : à produire par le Package Manager Unity ; registry Unity inaccessible ici.
+Intégrité structurelle : 81 .meta, 5 assemblies, 0 erreurs.

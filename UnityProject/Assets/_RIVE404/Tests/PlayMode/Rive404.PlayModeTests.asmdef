@@ -1,0 +1,7 @@
+{
+  "name": "Rive404.PlayModeTests",
+  "rootNamespace": "Rive404.Tests",
+  "references": ["Rive404.Domain", "Rive404.Game"],
+  "optionalUnityReferences": ["TestAssemblies"],
+  "autoReferenced": false
+}
